@@ -1,0 +1,144 @@
+#portfolio_section{
+    width: 100%;
+    position: relative;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/*----------------- resent projects area styles ---------------------*/
+#resent_project{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#resent_project > section:nth-child(1){
+    flex: 1;
+}
+
+#resent_project > section:nth-child(1) > h1{
+    font-family: "Roboto", serif;
+    color: #191970;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#resent_project > section:nth-child(1) > h4{
+    font-family: "Roboto",serif;
+    color: #5e5e5e;
+    margin-top: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+#resent_project > section:nth-child(2){
+    flex: 4;
+    margin-bottom: 30px;
+}
+
+#resent_project > section:nth-child(2) > div{
+    width: 95%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: relative;
+    margin: auto;
+    display: flex;
+}
+
+#resent_project > section:nth-child(2) > div > div{
+    flex: 1;
+    margin: 10px;
+    background: #ebebeb;
+}
+
+/*--------------------- testimonial area styles -------------------*/
+#testimonial{
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+#testimonial > div{
+    background-image: url(../../assets/images/testamonial.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 520px;
+    position: relative;
+}
+
+#testimonial > div > h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: "Roboto", serif;
+    color: #191970;
+    text-align: center;
+    background: white;
+    top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.testimonial_div{
+    flex: 1;
+    width: 80%;
+    height: 80%;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    margin: 25px 15px 15px 50px;
+    text-align: center;
+    top: 60px;
+    opacity: 0.75;
+    box-shadow: 0 0 10px 0 #008eff;
+}
+
+#testimonial > div > div:nth-child(3){
+    margin: 25px 8px 8px 8px;
+}
+
+#testimonial > div > div:nth-child(4){
+    margin: 25px 8px 8px 8px;
+}
+
+#testimonial > div > div:nth-child(5){
+    margin: 25px 50px 15px 15px;
+}
+
+.image_div{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border-radius: 100%;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 12px;
+    position: relative;
+}
+
+.testimonial_heading{
+    width: fit-content;
+    font-family: "Roboto", serif;
+    color: #191970;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 35px;
+}
+
+.testimonial_para{
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "Roboto", serif;
+    color: #5e5e5e;
+    line-height: 1.5;
+}
