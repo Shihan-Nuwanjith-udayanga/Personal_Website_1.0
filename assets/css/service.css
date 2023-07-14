@@ -1,0 +1,162 @@
+#service_section{
+    width: 100%;
+    position: relative;
+    height: 900px;
+    display: flex;
+}
+
+/*------------------- section01 styles ------------------*/
+#section01{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#my_serviceDiv{
+    flex: 1;
+    margin-left: 15px;
+    padding-top: 30px;
+}
+
+#my_serviceDiv > h3{
+    width: fit-content;
+    color: #191970;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-family: "Roboto",serif;
+    font-weight: 500;
+}
+
+#my_serviceDiv > h1{
+    width: fit-content;
+    color: #191970;
+    margin-top: 0;
+    margin-left: 50px;
+    font-family: "Roboto",serif;
+}
+
+#my_serviceDiv > div{
+    margin-left: 50px;
+    margin-right: 25px;
+    position: relative;
+}
+
+#my_serviceDiv > div > p{
+    font-family: "Roboto",serif;
+    line-height: 1.4;
+    color: #5e5e5e;
+}
+
+#javaDiv{
+    flex: 2;
+    position: relative;
+}
+
+#javaDiv > div{
+    margin-right: 10px;
+}
+
+.div{
+    width: 85%;
+    height: 95%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 8px 0 #cbcbcb;
+}
+
+.image > img{
+    width: 200px;
+}
+
+.heading{
+    color: #2D8A9A;
+    font-family: "Roboto",serif;
+}
+
+.paragraph{
+    margin: 20px;
+}
+
+.paragraph > p{
+    font-family: "Roboto",serif;
+    line-height: 1.4;
+    color: #5e5e5e;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.learnMore{
+    width: 150px;
+    height: 40px;
+    background: #191970;
+    border: none;
+    border-radius: 10px;
+    font-family: "Roboto",serif;
+    color: white;
+    font-size: 18px;
+}
+
+.learnMore:hover{
+    background-color: #5e5e5e;
+    color: black;
+    cursor: pointer;
+}
+
+
+/*-------------------- section02 styles ----------------------*/
+#section02{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#webDiv{
+    flex: 1;
+    position: relative;
+}
+
+#graphicDiv{
+    flex: 1;
+    position: relative;
+}
+
+/*------------------ section03 styles -------------------------*/
+#section03{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#frontDiv{
+    flex: 1;
+    position: relative;
+}
+
+#frontDiv > div{
+    margin-left: 10px;
+}
+
+#socialDiv{
+    flex: 1;
+    position: relative;
+}
+
+#socialDiv > div{
+    margin-left: 10px;
+}
+
+#learnMore{
+    bottom: 20px;
+    position: relative;
+}
+
