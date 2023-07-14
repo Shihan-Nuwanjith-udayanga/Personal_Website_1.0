@@ -1,0 +1,93 @@
+#home_section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#home_section > div:nth-child(2){
+    flex: 1;
+    padding: 100px 0px 0px 70px;
+}
+
+#home_section > div:nth-child(2) > h1:nth-child(1){
+    width: fit-content;
+    color: #198797;
+    font-family: "Roboto",serif;
+    font-size: 55px;
+    margin: 0;
+}
+
+#home_section > div:nth-child(2) > h1:nth-child(2){
+    width: fit-content;
+    color: #191970;
+    font-family: "Roboto",serif;
+    font-size: 70px;
+    margin: 10px 0px 15px 0px;
+}
+
+#description{
+    width: 80%;
+}
+
+#description > h4{
+    color: #5e5e5e;
+    font-family: "Roboto",serif;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+#button{
+    width: 150px;
+    height: 40px;
+    background: #191970;
+    border: none;
+    border-radius: 10px;
+    font-family: "Roboto",serif;
+    color: white;
+    font-size: 18px;
+}
+/*------------ social media content styles -------------*/
+#socialMediaContentHome > a{
+    display: inline-block;
+    padding-right: 5px;
+    padding-top: 40px;
+}
+
+.socialMediaIconHome{
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.socialMediaIconHome:hover{
+    background-color: #00e0ff;
+}
+
+.socialMediaIconHome > img{
+    width: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*--------- image area styles -----------*/
+#home_section > div:nth-child(3){
+    flex: 1;
+    position: relative;
+}
+
+#homeImage > img{
+    width: 80%;
+    top: 40px;
+    position: relative;
+}
+
