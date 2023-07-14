@@ -50,6 +50,14 @@
     color: white;
     font-size: 18px;
 }
+
+#button:hover{
+    cursor: pointer;
+    background-color: #636363;
+    color: black;
+    font-weight: bold;
+}
+
 /*------------ social media content styles -------------*/
 #socialMediaContentHome > a{
     display: inline-block;
