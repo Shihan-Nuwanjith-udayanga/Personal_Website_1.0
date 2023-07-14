@@ -1,0 +1,173 @@
+#contact_section{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/*----------------------- Contact me area styles ---------------------*/
+#contactMe{
+    flex: 1;
+    text-align: center;
+}
+
+#contactMe > h1{
+    font-family: "Roboto", serif;
+    color: #191970;
+    margin-bottom: 5px;
+}
+
+#contactMe > p{
+    width: 680px;
+    margin: auto;
+    color: #5e5e5e;
+    font-family: "Roboto",serif;
+    line-height: 1.4;
+}
+
+/*------------------------- Contact Div area styles ------------------------*/
+#contactDiv{
+    flex: 2;
+    display: flex;
+}
+
+#contactDiv > div{
+    width: 80%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact_div{
+    background: white;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 lightgrey;
+    text-align: center;
+    flex: 1;
+}
+
+.contact_div > img{
+    width: 60px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.contact_div > h3{
+    font-family: "Roboto",serif;
+    color: #191970;
+}
+
+.contact_div > p{
+    font-family: "Roboto",serif;
+    font-weight: 500;
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.4;
+    color: #5e5e5e;
+}
+
+#contactDiv > div > div:nth-child(2) > img{
+    width: 50px;
+}
+
+#contactDiv > div > div:nth-child(3) > img{
+    width: 50px;
+}
+
+/*------------------------- Send message area styles --------------------------*/
+#sendMessage{
+    flex: 3;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+#form_area{
+    flex: 1;
+    margin: 15px 10px 15px 50px;
+    position: relative;
+}
+
+#form_area > h4{
+    width: fit-content;
+    margin: 0;
+    padding: 10px;
+    font-family: "Roboto",serif;
+    color: #191970;
+    font-weight: 500;
+}
+
+#form_area > form > div{
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+}
+
+#form_area > form > div > input{
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    border: 2px solid #ccc;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: "Roboto",serif;
+}
+
+#form_area > form > div > textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: "Roboto",serif;
+    padding-top: 10px;
+}
+
+#form_area > form > button{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    right: 50px;
+    bottom: 10px;
+    background-color: #191970;
+    border: none;
+    border-radius: 10px;
+    font-family: "Roboto",serif;
+    color: white;
+}
+
+#form_area > form > button:hover{
+    background-color: #5e5e5e;
+    color: black;
+    cursor: pointer;
+}
+
+/*------------------ google map area styles ---------------------*/
+#map_area{
+    flex: 1;
+    margin: 15px 50px 15px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 0 lightgrey;
+    position: relative;
+}
+
+#map_area > iframe{
+    border: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
