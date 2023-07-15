@@ -5,7 +5,7 @@ function sendEmail() {
         // Username : "shihannuwanjith@gmail.com",
         // Password : "2450E6BD0C49A4C17189BBCE3D874CE7127C",
         To : 's92067840@ousl.lk',
-        From : document.getElementById("mail").value,
+        From : "shihannuwanjith@gmail.com",
         Subject : "New Contact Form Enquiry",
         Body : "Name: " + document.getElementById("name").value
             + "<br> Email: " +  document.getElementById("mail").value
