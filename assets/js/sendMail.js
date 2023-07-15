@@ -1,9 +1,9 @@
 function sendEmail() {
     Email.send({
-        SecureToken: "5c85e59c-c2b6-4a27-a23c-305c724143a1",
+        SecureToken: "611a6175-9d9c-46e8-b5b7-1b9bba5e4d19",
         // Host : "smtp.elasticemail.com",
         // Username : "shihannuwanjith@gmail.com",
-        // Password : "2450E6BD0C49A4C17189BBCE3D874CE7127C",
+        // Password : "5C882FD79272A70518FC4AFF801E96FAE348",
         To : 's92067840@ousl.lk',
         From : "shihannuwanjith@gmail.com",
         Subject : "New Contact Form Enquiry",
