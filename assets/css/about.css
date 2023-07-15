@@ -140,3 +140,14 @@
 }
 
 /*----------- Skills area content styles end ----------*/
+
+/*------------- second color div content styles ----------*/
+#secondDiv{
+    width: 400px;
+    height: 400px;
+    background-color: #3f51b5;
+    position: absolute;
+    right: 0;
+    filter: blur(300px);
+    z-index: -10;
+}

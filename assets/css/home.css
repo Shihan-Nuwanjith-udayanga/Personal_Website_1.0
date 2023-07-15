@@ -99,3 +99,12 @@
     position: relative;
 }
 
+/*------------------ home content area color div styles --------------*/
+#firstDiv{
+    width: 500px;
+    height: 500px;
+    background-color: #2D8A9A;
+    position: absolute;
+    filter: blur(350px);
+    z-index: -10;
+}
