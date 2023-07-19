@@ -24,8 +24,18 @@
     <link rel="stylesheet" href="assets/css/service.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="assets/css/contact.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Shihan Nuwanjith</title>
+    <style>
+        mark{
+            background: none;
+            color: indigo;
+        }
+        /*this style using ajax function*/
+        .active{
+            color: #00e0ff;
+        }
+    </style>
 </head>
 <body>
 <!--header area content start-->
@@ -36,19 +46,19 @@
     <nav>
         <ul>
             <a href="#home">
-                <li>Home</li>
+                <li class="list active">Home</li>
             </a>
             <a href="#about">
-                <li>About</li>
+                <li class="list">About</li>
             </a>
             <a href="#service">
-                <li>Service</li>
+                <li class="list">Service</li>
             </a>
             <a href="#portfolio">
-                <li>Portfolio</li>
+                <li class="list">Portfolio</li>
             </a>
             <a href="#contact">
-                <li>Contact</li>
+                <li class="list">Contact</li>
             </a>
         </ul>
     </nav>
@@ -61,7 +71,7 @@
         <dfn id="home"></dfn>
         <div>
             <h1>Hello!
-                <mark style="background: none; color: indigo"> I'm</mark>
+                <mark> I'm</mark>
             </h1>
             <h1><span class="multiText"></span></h1>
             <div id="description">
@@ -72,7 +82,7 @@
                 <Button type="button" id="button">Hire Me</Button>
             </a>
             <!--            social media content start-->
-            <div id="socialMediaContentHome">
+            <div id="socialMediaContentHome" data-aos="fade-right">
                 <a href="https://www.linkedin.com/in/shihan-nuwanjith-udayanga/" target="_blank">
                     <div class="socialMediaIconHome">
                         <img src="assets/images/linkedin.png" alt="PNG">
@@ -108,7 +118,7 @@
         </div>
         <!--        home page image area-->
         <div id="homeImage">
-            <img src="assets/images/header%20Image.png" alt="image">
+            <img src="assets/images/header%20Image.png" alt="image" data-aos="fade-up">
         </div>
         <!--        color div content-->
         <div id="firstDiv"></div>
@@ -120,9 +130,9 @@
         <!--        About me section content start-->
         <section id="about_me">
             <div>
-                <img src="assets/images/aboutUs.png" alt="image">
+                <img src="assets/images/aboutUs.png" alt="image" data-aos="fade-right">
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <h1>About Me</h1>
                 <div>
                     <p>
@@ -146,7 +156,7 @@
         </section>
         <!--        About me section content End-->
         <section id="skills">
-            <div>
+            <div data-aos="fade-right">
                 <h1>Skills</h1>
                 <div>
                     <p>
@@ -159,43 +169,43 @@
             <!--            skills image content-->
             <div>
                 <div id="grid">
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/java.png" alt="java image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/html.png" alt="html image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/css.png" alt="css image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/javascript.png" alt="java Script image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/react_native.png" alt="react native image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/flutter.png" alt="flutter image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/laravel.png" alt="laravel image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/android.png" alt="android image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/bootstrap.png" alt="bootstrap image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/photoshop.png" alt="photoshop image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/figma.png" alt="figma image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/Filmora_app.png" alt="filmora image">
                     </div>
-                    <div>
+                    <div data-aos="flip-up">
                         <img src="assets/images/canva.png" alt="canva image">
                     </div>
                 </div>
@@ -210,7 +220,7 @@
         <dfn id="service"></dfn>
         <!--        section 01 content-->
         <section id="section01">
-            <div id="my_serviceDiv">
+            <div id="my_serviceDiv" data-aos="fade-right">
                 <h3>My Awesome</h3>
                 <h1>Services</h1>
                 <div>
@@ -221,7 +231,7 @@
                 </div>
             </div>
             <!--            java & web design class area content-->
-            <div id="javaDiv">
+            <div id="javaDiv" data-aos="flip-right">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/classes.png" alt="image">
@@ -242,7 +252,7 @@
         <!--        section 02 content-->
         <section id="section02">
             <!--            web design area content-->
-            <div id="webDiv">
+            <div id="webDiv" data-aos="flip-right">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/WebDesign.png" alt="PNG">
@@ -258,7 +268,7 @@
                     </a>
                 </div>
             </div>
-            <div id="graphicDiv">
+            <div id="graphicDiv" data-aos="flip-right">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/GraphicDesign.png" alt="PNG">
@@ -276,7 +286,7 @@
         </section>
         <!--        section 03 content-->
         <section id="section03">
-            <div id="frontDiv">
+            <div id="frontDiv" data-aos="flip-right">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/FrontEndDevelopment.png" alt="PNG">
@@ -291,7 +301,7 @@
                     </a>
                 </div>
             </div>
-            <div id="socialDiv">
+            <div id="socialDiv" data-aos="flip-right">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/SocialMediaHandeling.png" alt="PNG">
@@ -387,17 +397,17 @@
         <!--        contact  div area content-->
         <section id="contactDiv">
             <div>
-                <div class="contact_div">
+                <div class="contact_div" data-aos="flip-up">
                     <img src="assets/images/address.png" alt="PNG">
                     <h3>Address</h3>
                     <p>449/12, Kalukanda, Thalgasyaya, Akmeemana, Galle, Sri Lanka</p>
                 </div>
-                <div class="contact_div">
+                <div class="contact_div" data-aos="flip-up">
                     <img src="assets/images/email.png" alt="PNG">
                     <h3>E-mail</h3>
                     <p>shihannuwanjith@gmail.com</p>
                 </div>
-                <div class="contact_div">
+                <div class="contact_div" data-aos="flip-up">
                     <img src="assets/images/phone.png" alt="PNG">
                     <h3>Phone</h3>
                     <p>+94 77 3381841</p>
@@ -541,6 +551,8 @@
 <script src="assets/js/sendMail.js"></script>
 <!--below script using the animate home section heading element-->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!--below script is a jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script>
     var typingEffect = new Typed(".multiText", {
         strings: ["Shihan Nuwanjith","Undergraduate Student", "Software Engineer", "Developer", "Teacher"],
@@ -549,7 +561,21 @@
         backSpeed: 80,
         backDelay: 1500
     });
+
+    $(document).ready(function (){
+        $('a').click(function (){
+            //removing active class for all links
+            $('a').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
 </script>
 <!--<script src="assets/js/index.js"></script>-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 3000
+    });
+</script>
 </body>
 </html>
