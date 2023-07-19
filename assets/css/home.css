@@ -126,3 +126,46 @@
         width: 75%;
     }
 }
+
+/*---------Tablet size responsive Desing -------------*/
+@media all and (min-width: 425px) and (max-width: 768px){
+    #home_section > div:nth-child(2) {
+        padding: 50px 0px 0px 20px;
+    }
+
+    #home_section > div:nth-child(2) > h1:nth-child(1) {
+        font-size: 40px;
+    }
+
+    #home_section > div:nth-child(2) > h1:nth-child(2) {
+        font-size: 50px;
+    }
+
+    #description {
+        width: 100%;
+    }
+
+    #description > h4 {
+        font-size: 14px;
+    }
+
+    #button {
+        width: 130px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .socialMediaIconHome {
+        width: 30px;
+        height: 30px;
+    }
+
+    .socialMediaIconHome > img {
+        width: 20px;
+    }
+
+    #homeImage > img{
+        width: 80%;
+        left: 40px;
+    }
+}

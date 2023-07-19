@@ -196,3 +196,37 @@ hr{
     background: white;
     border-radius: 5px;
 }
+
+/*---------------------------- Rsponsive Designs ---------------------------*/
+/*---------Laptop size responsive Desing -------------*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+}
+
+/*---------Tablet size responsive Desing -------------*/
+@media all and (min-width: 425px) and (max-width: 768px){
+    footer{
+        height: 600px;
+    }
+
+    #logo_area > img{
+        width: 150px;
+    }
+
+    #contact_area > h2 {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    #contact_area > div:nth-child(2) {
+        padding: 15px 0px 10px 50px;
+    }
+
+    #contact_area > div:nth-child(3){
+        padding: 10px 0px 15px 50px;
+    }
+
+    #socialMediaContent{
+        text-align: center;
+    }
+}

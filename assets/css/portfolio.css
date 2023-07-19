@@ -147,7 +147,7 @@
 /*---------------------------- Rsponsive Designs ---------------------------*/
 /*---------Laptop size responsive Desing -------------*/
 @media all and (min-width: 768px) and (max-width: 1024px){
-    #testimonial > div > div:nth-child(2){
+    #testimonial > div{
         height: 600px;
     }
 
@@ -157,5 +157,20 @@
 
     #testimonial > div > div:nth-child(5){
         margin: 25px 20px 10px 8px;
+    }
+}
+
+/*---------Tablet size responsive Desing -------------*/
+@media all and (min-width: 425px) and (max-width: 768px){
+    #portfolio_section {
+        height: 2000px;
+    }
+
+    #resent_project > section:nth-child(1) {
+        flex: 0.5;
+    }
+
+    #resent_project > section:nth-child(2) > div {
+        flex-direction: column;
     }
 }

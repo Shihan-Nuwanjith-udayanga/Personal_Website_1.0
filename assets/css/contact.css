@@ -193,3 +193,35 @@
         margin: 25px;
     }
 }
+
+/*---------Tablet size responsive Desing -------------*/
+@media all and (min-width: 425px) and (max-width: 768px) {
+    #contact_section {
+        height: 2150px;
+    }
+
+    #contactMe > p {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #contactDiv > div {
+        flex-direction: column;
+    }
+
+    .contact_div {
+        margin: 15px;
+    }
+
+    #sendMessage {
+        flex-direction: column;
+    }
+
+    #form_area {
+        margin: 15px 40px 15px 40px;
+    }
+
+    #map_area {
+        margin: 10px 50px 20px 50px;
+    }
+}
