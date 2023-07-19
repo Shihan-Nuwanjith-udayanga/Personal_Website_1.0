@@ -97,17 +97,6 @@
     width: 80%;
     top: 40px;
     position: relative;
-    animation: imageAnimation 2s infinite;
-}
-
-@keyframes imageAnimation {
-    from{
-        left: 600px;
-        display: none;
-    }
-    to{
-        left: 0px;
-    }
 }
 
 /*------------------ home content area color div styles --------------*/
