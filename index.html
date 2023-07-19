@@ -37,9 +37,18 @@
         .active {
             color: #00e0ff;
         }
+
+        #loader{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background: url("assets/gif/loading.gif");
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
+<section id="loader"></section>
 <!--header area content start-->
 <header>
     <aside>
@@ -557,6 +566,7 @@
 </footer>
 <!--footer area content end-->
 <script src="assets/js/scroll.js"></script>
+<script src="assets/js/jquery.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="assets/js/sendMail.js"></script>
 <!--below script using the animate home section heading element-->
@@ -589,6 +599,7 @@
         duration: 2500
     });
 </script>
+<!--slide show script | resent project area-->
 <script>
     var swiper = new Swiper('.swiper-container',{
         effect:'coverflow',
@@ -610,6 +621,14 @@
         // pagination:{
         //     el: '.swiper-pagination',
         // },
+    });
+</script>
+<script>
+    $(window).on('load',function (){
+       $('#loader').fadeOut(200);
+    });
+    $(document).ready(function(){
+        console.log("Document is Ready..!");
     });
 </script>
 </body>
