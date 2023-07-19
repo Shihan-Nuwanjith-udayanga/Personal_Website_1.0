@@ -197,7 +197,11 @@
 /*---------Tablet size responsive Desing -------------*/
 @media all and (min-width: 425px) and (max-width: 768px) {
     #contact_section {
-        height: 2150px;
+        height: 2000px;
+    }
+
+    #contactMe {
+        flex: 0.5;
     }
 
     #contactMe > p {

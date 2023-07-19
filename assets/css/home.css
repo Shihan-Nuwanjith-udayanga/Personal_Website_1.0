@@ -129,6 +129,10 @@
 
 /*---------Tablet size responsive Desing -------------*/
 @media all and (min-width: 425px) and (max-width: 768px){
+    #home_section {
+        height: 410px;
+    }
+
     #home_section > div:nth-child(2) {
         padding: 50px 0px 0px 20px;
     }
