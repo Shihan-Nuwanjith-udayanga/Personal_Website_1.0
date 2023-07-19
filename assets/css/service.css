@@ -1,7 +1,7 @@
 #service_section{
     width: 100%;
     position: relative;
-    height: 900px;
+    height: 1000px;
     display: flex;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 60px;
 }
 
 #my_serviceDiv{
@@ -119,6 +120,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 60px;
 }
 
 #webDiv{
@@ -137,6 +139,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 60px;
 }
 
 #frontDiv{
