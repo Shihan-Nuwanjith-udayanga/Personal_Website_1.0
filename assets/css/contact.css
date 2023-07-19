@@ -181,3 +181,15 @@
     filter: blur(350px);
     z-index: -10;
 }
+
+/*---------------------------- Rsponsive Designs ---------------------------*/
+/*---------Laptop size responsive Desing -------------*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #contactDiv > div{
+        width: 90%;
+    }
+
+    .contact_div {
+        margin: 25px;
+    }
+}

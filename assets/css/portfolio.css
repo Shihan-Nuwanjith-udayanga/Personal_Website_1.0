@@ -143,3 +143,19 @@
     color: #5e5e5e;
     line-height: 1.5;
 }
+
+/*---------------------------- Rsponsive Designs ---------------------------*/
+/*---------Laptop size responsive Desing -------------*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #testimonial > div > div:nth-child(2){
+        height: 600px;
+    }
+
+    #testimonial > div > div:nth-child(2){
+        margin: 25px 10px 15px 20px;
+    }
+
+    #testimonial > div > div:nth-child(5){
+        margin: 25px 20px 10px 8px;
+    }
+}
