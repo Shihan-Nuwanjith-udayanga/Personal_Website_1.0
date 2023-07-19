@@ -38,9 +38,16 @@
             color: #00e0ff;
         }
 
-        #loader{
+        #loader_section{
             width: 100vw;
             height: 100vh;
+            background-color: white;
+            text-align: center;
+            position: fixed;
+        }
+
+        #loader{
+            text-align: center;
             position: fixed;
             background: url("assets/gif/loading.gif");
             background-size: cover;
@@ -48,7 +55,9 @@
     </style>
 </head>
 <body>
-<section id="loader"></section>
+<section id="loader_section">
+    <div id="loader"></div>
+</section>
 <!--header area content start-->
 <header>
     <aside>
