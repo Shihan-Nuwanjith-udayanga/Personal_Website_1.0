@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/service.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="assets/css/contact.css">
+
     <title>Shihan Nuwanjith</title>
 </head>
 <body>
@@ -59,8 +60,10 @@
     <section id="home_section">
         <dfn id="home"></dfn>
         <div>
-            <h1>Hy! I am</h1>
-            <h1>Shihan Nuwanjith</h1>
+            <h1>Hello!
+                <mark style="background: none; color: indigo"> I'm</mark>
+            </h1>
+            <h1><span class="multiText"></span></h1>
             <div id="description">
                 <h4>I am a software engineering student with a passion for technology and a strong desire to create
                     innovative solutions</h4>
@@ -536,6 +539,17 @@
 <script src="assets/js/scroll.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="assets/js/sendMail.js"></script>
-<script src="assets/js/index.js"></script>
+<!--below script using the animate home section heading element-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typingEffect = new Typed(".multiText", {
+        strings: ["Shihan Nuwanjith","Undergraduate Student", "Software Engineer", "Developer", "Teacher"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500
+    });
+</script>
+<!--<script src="assets/js/index.js"></script>-->
 </body>
 </html>
