@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<!--    swiper library link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Shihan Nuwanjith</title>
     <style>
@@ -51,6 +52,24 @@
             position: fixed;
             background: url("assets/gif/loading.gif");
             background-size: cover;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
         }
     </style>
 </head>
@@ -251,7 +270,7 @@
                 </div>
             </div>
             <!--            java & web design class area content-->
-            <div id="javaDiv" data-aos="flip-right">
+            <div id="javaDiv" data-aos="zoom-in">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/classes.png" alt="image">
@@ -272,7 +291,7 @@
         <!--        section 02 content-->
         <section id="section02">
             <!--            web design area content-->
-            <div id="webDiv" data-aos="flip-right">
+            <div id="webDiv" data-aos="zoom-in">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/WebDesign.png" alt="PNG">
@@ -288,7 +307,7 @@
                     </a>
                 </div>
             </div>
-            <div id="graphicDiv" data-aos="flip-right">
+            <div id="graphicDiv" data-aos="zoom-in">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/GraphicDesign.png" alt="PNG">
@@ -306,7 +325,7 @@
         </section>
         <!--        section 03 content-->
         <section id="section03">
-            <div id="frontDiv" data-aos="flip-right">
+            <div id="frontDiv" data-aos="zoom-in">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/FrontEndDevelopment.png" alt="PNG">
@@ -321,7 +340,7 @@
                     </a>
                 </div>
             </div>
-            <div id="socialDiv" data-aos="flip-right">
+            <div id="socialDiv" data-aos="zoom-in">
                 <div class="div">
                     <div class="image">
                         <img src="assets/images/SocialMediaHandeling.png" alt="PNG">
@@ -350,15 +369,29 @@
                 <h4>Below you can see samples of some of our current projects.</h4>
             </section>
             <section id="slideSection">
-                <div class="swiper-container">
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/carRentUiDesign.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/bookCoverDesign.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/webSite.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/coffeUiDesign.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/pharmacySystem.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/busUiDesign.PNG" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/shopBanner.jpg" alt="">
+                        </div>
                     </div>
                     <!--                add pagination-->
                     <div class="swiper-pagination"></div>
@@ -425,17 +458,17 @@
         <!--        contact  div area content-->
         <section id="contactDiv">
             <div>
-                <div class="contact_div" data-aos="flip-up">
+                <div class="contact_div" data-aos="fade-down">
                     <img src="assets/images/address.png" alt="PNG">
                     <h3>Address</h3>
                     <p>449/12, Kalukanda, Thalgasyaya, Akmeemana, Galle, Sri Lanka</p>
                 </div>
-                <div class="contact_div" data-aos="flip-up">
+                <div class="contact_div" data-aos="fade-down">
                     <img src="assets/images/email.png" alt="PNG">
                     <h3>E-mail</h3>
                     <p>shihannuwanjith@gmail.com</p>
                 </div>
-                <div class="contact_div" data-aos="flip-up">
+                <div class="contact_div" data-aos="fade-down">
                     <img src="assets/images/phone.png" alt="PNG">
                     <h3>Phone</h3>
                     <p>+94 77 3381841</p>
@@ -578,7 +611,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="assets/js/sendMail.js"></script>
-<!--below script using the animate home section heading element-->
+<!--below script using the animate home section heading element (typed animation)-->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <!--below script is a jquery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -610,26 +643,21 @@
 </script>
 <!--slide show script | resent project area-->
 <script>
-    var swiper = new Swiper('.swiper-container',{
-        effect:'coverflow',
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect:{
-            rotate: 20,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
             stretch: 0,
-            depth: 200,
+            depth: 100,
             modifier: 1,
             slideShadows: true,
         },
-        loop: true,
-        autoplay:{
-            delay: 2500,
-            disableOnInteraction: false,
+        pagination: {
+            el: ".swiper-pagination",
         },
-        // pagination:{
-        //     el: '.swiper-pagination',
-        // },
     });
 </script>
 <script>
