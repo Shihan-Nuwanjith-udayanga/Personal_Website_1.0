@@ -182,8 +182,57 @@
     z-index: -10;
 }
 
-/*---------------------------- Rsponsive Designs ---------------------------*/
-/*---------Laptop size responsive Desing -------------*/
+/*---------------------------- Responsive Designs ---------------------------*/
+/*----------- Mobile Responsive ------------*/
+@media (max-width: 425px) {
+    #contact_section{
+        height: 2100px;
+    }
+
+    #contactMe{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        flex: 0.75;
+    }
+
+    #contactMe > h1{
+        margin-bottom: 30px;
+    }
+
+    #contactMe > p{
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #contactDiv{
+        margin-bottom: 50px;
+    }
+
+    #contactDiv > div{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #contactDiv > div > div{
+        margin: 10px;
+    }
+
+    #sendMessage{
+        flex-direction: column;
+    }
+
+    #form_area{
+        margin: 15px;
+    }
+
+    #map_area{
+        margin: 25px;
+    }
+}
+
+/*---------Laptop size responsive Design -------------*/
 @media all and (min-width: 768px) and (max-width: 1024px){
     #contactDiv > div{
         width: 90%;

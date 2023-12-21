@@ -164,15 +164,88 @@
     position: relative;
 }
 
-/*---------------------------- Rsponsive Designs ---------------------------*/
-/*---------Laptop size responsive Desing -------------*/
+/*---------------------------- Responsive Designs ---------------------------*/
+/*----------- Mobile Responsive ------------*/
+@media (max-width: 425px) {
+    #service_section{
+        flex-direction: column;
+        height: 3000px;
+    }
+
+    #section01{
+        flex: 0.75;
+    }
+
+    #my_serviceDiv {
+        margin: 10px;
+        padding: 0;
+        height: fit-content;
+        flex: 0.5;
+    }
+
+    #my_serviceDiv > h3 {
+        text-align: center;
+        margin: auto;
+    }
+
+    #my_serviceDiv > h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    #my_serviceDiv > div {
+        margin: 0;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    #my_serviceDiv > div > p {
+        margin-top: 40px;
+    }
+
+    #javaDiv{
+        margin-top: 30px;
+        flex: 1;
+    }
+
+    #javaDiv > div {
+        left: 0;
+        right: 0;
+        position: absolute;
+        height: fit-content;
+        padding-bottom: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #section02{
+        margin-top: 5px;
+    }
+
+    #section03{
+        margin-top: 5px;
+    }
+
+    #frontDiv{
+        left: 22px;
+    }
+
+    #socialDiv{
+        left: 22px;
+    }
+
+}
+
+/*---------Laptop size responsive Design -------------*/
 @media all and (min-width: 768px) and (max-width: 1024px){
     #service_section{
         height: 1070px;
     }
 }
 
-/*---------Tablet size responsive Desing -------------*/
+/*---------Tablet size responsive Design -------------*/
 @media all and (min-width: 425px) and (max-width: 768px){
 
 }

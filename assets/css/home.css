@@ -69,7 +69,7 @@
 .socialMediaIconHome{
     width: 35px;
     height: 35px;
-    background: white;
+    background: #ebebeb;
     border-radius: 10px;
     position: relative;
 }
@@ -116,9 +116,9 @@
 /*----------- Mobile Responsive ------------*/
 @media (max-width: 425px) {
     #home_section{
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: fit-content;
-        margin-top: 10px;
+        margin-top: 40px;
     }
 
     #home_section > div:nth-child(2){
@@ -126,16 +126,20 @@
     }
 
     #home_section > div:nth-child(2) > h1:nth-child(1){
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #home_section > div:nth-child(2) > h1:nth-child(2){
-        font-size: 50px;
+        font-size: 40px;
     }
 
     #description{
         width: 100%;
         text-align: center;
+    }
+
+    #description > h4{
+        margin-top: 30px;
     }
 
     #button{
@@ -156,11 +160,7 @@
     }
 
     #socialMediaContentHome > a{
-        padding-top: 0;
-    }
-
-    .socialMediaIconHome{
-        background: #ebebeb;
+        padding-top: 5px;
     }
 
     #homeImage{
@@ -169,7 +169,7 @@
     }
 
     #homeImage > img{
-        top: 0;
+        top: 10px;
     }
 }
 
@@ -188,11 +188,6 @@
     }
 }
 
-/*---------Mobile size responsive Design -------------*/
-@media all and (min-width: 320px) and (max-width: 425px){
-
-
-}
 
 /*---------Tablet size responsive Design -------------*/
 @media all and (min-width: 425px) and (max-width: 768px){

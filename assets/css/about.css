@@ -153,8 +153,91 @@
     z-index: -10;
 }
 
-/*---------------------------- Rsponsive Designs ---------------------------*/
-/*---------Laptop size responsive Desing -------------*/
+/*---------------------------- Responsive Designs ---------------------------*/
+/*----------- Mobile Responsive ------------*/
+@media (max-width: 425px) {
+    #about_section{
+        height: 1250px;
+    }
+
+    #about_me{
+        margin-top: 30px;
+        height: fit-content;
+    }
+
+    #about_me > div:nth-child(1){
+        display: none;
+    }
+
+    #about_me > div:nth-child(2) > h1 {
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #about_me > div:nth-child(2) > div {
+        margin: 10px;
+        padding: 0;
+        text-align: justify;
+    }
+
+    #download_cv{
+        width: 300px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    /*-------- skills area ----------*/
+    #skills{
+        flex-direction: column;
+    }
+
+    #skills > div:nth-child(1) {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    #skills > div:nth-child(1) >h1 {
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #skills > div:nth-child(1) > div {
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #skills > div:nth-child(1) > div > p {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+    #grid{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        width: 92%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #grid > div{
+        width: 65px;
+        height: 65px;
+        left: 0;
+        right: 0;
+        margin: 10px;
+    }
+}
+
+/*---------Laptop size responsive Design -------------*/
 @media all and (min-width: 768px) and (max-width: 1024px){
     #about_me > div:nth-child(1){
         position: relative;

@@ -153,8 +153,15 @@
     line-height: 1.5;
 }
 
-/*---------------------------- Rsponsive Designs ---------------------------*/
-/*---------Laptop size responsive Desing -------------*/
+/*---------------------------- Responsive Designs ---------------------------*/
+/*----------- Mobile Responsive ------------*/
+@media (max-width: 425px) {
+    #portfolio_section {
+        display: none;
+    }
+}
+
+/*---------Laptop size responsive Design -------------*/
 @media all and (min-width: 768px) and (max-width: 1024px){
     #testimonial > div{
         height: 600px;
