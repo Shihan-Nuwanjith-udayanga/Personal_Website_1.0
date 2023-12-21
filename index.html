@@ -13,7 +13,8 @@
           content="Shihan Nuwanjith Udayanga, software engineer, self-motivated, projects, technologies, insights,
           expertise, advancements, innovation, excellence, classes, web design, java, shihan, nuwanjith, linkeding,
           html, css, social media handeling, perosnal website, website, portfolio, design">
-    <base href="https://shihannuwanjith.me/">
+<!--    <base href="https://shihannuwanjith.me/">-->
+    <script src="https://kit.fontawesome.com/7a26c6c140.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -84,7 +85,7 @@
     </aside>
     <nav>
         <ul>
-            <a href="#home">
+            <a href="#home" class="active">
                 <li class="list">Home</li>
             </a>
             <a href="#about">
@@ -100,7 +101,30 @@
                 <li class="list">Contact</li>
             </a>
         </ul>
+        <div class="toggle_button">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
+
+    <div class="dropdown_menu">
+        <ul>
+            <a href="#home" class="active">
+                <li class="list">Home</li>
+            </a>
+            <a href="#about">
+                <li class="list">About</li>
+            </a>
+            <a href="#service">
+                <li class="list">Service</li>
+            </a>
+            <a href="#portfolio">
+                <li class="list">Portfolio</li>
+            </a>
+            <a href="#contact">
+                <li class="list">Contact</li>
+            </a>
+        </ul>
+    </div>
 </header>
 <!--header area content end-->
 <!--main area content start-->
@@ -607,6 +631,19 @@
     </section>
 </footer>
 <!--footer area content end-->
+<!--dropdown button-->
+<script>
+    const toggleBtn = document.querySelector('.toggle_button')
+    const toggleBnIcon = document.querySelector('.toggle_button i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function (){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBnIcon.classList = isOpen ? 'fas fa-times' : 'fas fa-bars'
+    }
+</script>
 <script src="assets/js/scroll.js"></script>
 <script src="assets/js/jquery.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -654,7 +691,10 @@
             depth: 100,
             modifier: 1,
             slideShadows: true,
-            autoplay: true
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
         },
         pagination: {
             el: ".swiper-pagination",
