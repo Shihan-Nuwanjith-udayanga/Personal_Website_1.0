@@ -14,6 +14,23 @@ header > aside > img{
     margin-left: 60px;
 }
 
+.checkButton{
+    color: white;
+    font-size: 25px;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle_button{
+    color: white;
+    font-size: 28px;
+    padding: 20px;
+    display: none;
+}
+
 header > nav > ul{
     margin: 6px 50px 6px 6px;
     padding: 0;
@@ -35,5 +52,66 @@ header > nav > ul > a > li{
 
 header > nav > ul > a > li:hover{
     color: #00e0ff;
+}
+
+/*---------- Dropdown Menu -----------*/
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 70px;
+    width: 200px;
+    background: rgb(17 17 65);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    display: none;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu > ul{
+    padding: 0;
+}
+
+.dropdown_menu > ul > a{
+    text-decoration: none;
+}
+
+.dropdown_menu > ul > a > li{
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Roboto", serif;
+}
+
+.dropdown_menu > ul > a > li:hover{
+    color: #00e0ff;
+}
+
+/*--------- RESPONSIVE DESIGN ------------*/
+
+/*----------- Mobile Responsive ------------*/
+@media (max-width: 425px) {
+    header > nav > ul{
+        display: none;
+    }
+
+    .toggle_button{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+   .dropdown_menu{
+       display: block;
+       left: 2rem;
+       width: unset;
+   }
+
 }
 
