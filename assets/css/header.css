@@ -96,7 +96,7 @@ header > nav > ul > a > li:hover{
 /*--------- RESPONSIVE DESIGN ------------*/
 
 /*----------- Mobile Responsive ------------*/
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     header > nav > ul{
         display: none;
     }

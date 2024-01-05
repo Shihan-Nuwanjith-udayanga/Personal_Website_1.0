@@ -114,7 +114,7 @@
 /*---------------------------- Responsive Designs ---------------------------*/
 
 /*----------- Mobile Responsive ------------*/
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     #home_section{
         flex-direction: column;
         height: fit-content;
@@ -127,10 +127,12 @@
 
     #home_section > div:nth-child(2) > h1:nth-child(1){
         font-size: 30px;
+        margin: auto;
     }
 
     #home_section > div:nth-child(2) > h1:nth-child(2){
         font-size: 40px;
+        margin: auto;
     }
 
     #description{
@@ -164,8 +166,7 @@
     }
 
     #homeImage{
-        margin-left: 50px;
-        margin-bottom: 15px;
+        text-align: center;
     }
 
     #homeImage > img{
@@ -173,65 +174,27 @@
     }
 }
 
-/*---------Laptop size responsive Design -------------*/
-@media all and (min-width: 768px) and (max-width: 1024px){
-    #home_section > div:nth-child(2) > h1:nth-child(1){
-        font-size: 45px;
-    }
-
-    #home_section > div:nth-child(2) > h1:nth-child(2){
-        font-size: 60px;
-    }
-
-    #homeImage > img{
-        width: 75%;
-    }
-}
-
-
 /*---------Tablet size responsive Design -------------*/
 @media all and (min-width: 425px) and (max-width: 768px){
-    #home_section {
-        height: 410px;
-    }
-
-    #home_section > div:nth-child(2) {
-        padding: 50px 0px 0px 20px;
-    }
-
-    #home_section > div:nth-child(2) > h1:nth-child(1) {
-        font-size: 40px;
-    }
-
-    #home_section > div:nth-child(2) > h1:nth-child(2) {
-        font-size: 50px;
-    }
-
-    #description {
-        width: 100%;
-    }
-
-    #description > h4 {
-        font-size: 14px;
-    }
-
-    #button {
-        width: 130px;
-        height: 35px;
-        font-size: 16px;
-    }
-
-    .socialMediaIconHome {
-        width: 30px;
-        height: 30px;
-    }
-
-    .socialMediaIconHome > img {
-        width: 20px;
-    }
-
     #homeImage > img{
-        width: 80%;
-        left: 40px;
+        width: 70%;
+        margin-bottom: 30px;
     }
 }
+
+/*---------Laptop size responsive Design -------------*/
+/*@media all and (min-width: 768px) and (max-width: 1024px){*/
+/*    #home_section > div:nth-child(2) > h1:nth-child(1){*/
+/*        font-size: 45px;*/
+/*    }*/
+
+/*    #home_section > div:nth-child(2) > h1:nth-child(2){*/
+/*        font-size: 60px;*/
+/*    }*/
+
+/*    #homeImage > img{*/
+/*        width: 75%;*/
+/*    }*/
+/*}*/
+
+

@@ -155,7 +155,7 @@
 
 /*---------------------------- Responsive Designs ---------------------------*/
 /*----------- Mobile Responsive ------------*/
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     #about_section{
         height: 1250px;
     }
@@ -237,86 +237,48 @@
     }
 }
 
-/*---------Laptop size responsive Design -------------*/
-@media all and (min-width: 768px) and (max-width: 1024px){
-    #about_me > div:nth-child(1){
-        position: relative;
-    }
-
-    #about_me > div:nth-child(1) > img{
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        position: absolute;
-    }
-
-    #about_me > div.aos-init.aos-animate > div{
-        padding-right: 20px;
-    }
-
-    #grid{
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-        width: 90%;
-        height: 95%;
-        margin-top: 60px;
-    }
-}
-
 /*---------Tablet size responsive Desing -------------*/
 @media all and (min-width: 425px) and (max-width: 768px){
-    #about_me > div:nth-child(1) {
-        position: relative;
-    }
-
-    #about_me > div:nth-child(1) > img {
-        position: absolute;
-        width: 80%;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        left: 30px;
-    }
-
-    #about_me > div:nth-child(2) {
-        padding: 0;
-    }
-
-    #about_me > div:nth-child(2) > div {
-        padding-right: 0;
-    }
-
     #about_me > div:nth-child(2) > div > p {
-        font-size: 15px;
+        text-align: center;
+        margin-top: 40px;
     }
 
     #download_cv {
-        width: 130px;
-        height: 35px;
-        font-size: 15px;
+        margin-top: 55px;
     }
 
-    #skills > div:nth-child(1) > div {
-        margin-left: 15px;
-        width: 90%;
-    }
-
-    #grid {
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-        width: 96%;
-        height: 80%;
-        margin-top: 60px;
-    }
-
-    #grid > div {
-        width: 65px;
-        height: 65px;
-    }
-
-    #grid > div > img {
-        width: 60%;
+    #skills > div:nth-child(1) > div > p {
+        text-align: center;
     }
 }
+
+
+
+/*---------Laptop size responsive Design -------------*/
+/*@media all and (min-width: 768px) and (max-width: 1024px){*/
+/*    #about_me > div:nth-child(1){*/
+/*        position: relative;*/
+/*    }*/
+
+/*    #about_me > div:nth-child(1) > img{*/
+/*        top: 0;*/
+/*        bottom: 0;*/
+/*        margin: auto;*/
+/*        position: absolute;*/
+/*    }*/
+
+/*    #about_me > div.aos-init.aos-animate > div{*/
+/*        padding-right: 20px;*/
+/*    }*/
+
+/*    #grid{*/
+/*        display: grid;*/
+/*        grid-template-rows: repeat(3, 1fr);*/
+/*        grid-template-columns: repeat(4, 1fr);*/
+/*        width: 90%;*/
+/*        height: 95%;*/
+/*        margin-top: 60px;*/
+/*    }*/
+/*}*/
+
