@@ -232,17 +232,6 @@
     }
 }
 
-/*---------Laptop size responsive Design -------------*/
-@media all and (min-width: 768px) and (max-width: 1024px){
-    #contactDiv > div{
-        width: 90%;
-    }
-
-    .contact_div {
-        margin: 25px;
-    }
-}
-
 /*---------Tablet size responsive Desing -------------*/
 @media all and (min-width: 425px) and (max-width: 768px) {
     #contact_section {
@@ -253,9 +242,13 @@
         flex: 0.5;
     }
 
+    #contactMe > h1 {
+        margin-bottom: 20px;
+    }
+
     #contactMe > p {
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     #contactDiv > div {
@@ -276,5 +269,16 @@
 
     #map_area {
         margin: 10px 50px 20px 50px;
+    }
+}
+
+/*---------Laptop size responsive Design -------------*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #contactDiv > div{
+        width: 90%;
+    }
+
+    .contact_div {
+        margin: 25px;
     }
 }

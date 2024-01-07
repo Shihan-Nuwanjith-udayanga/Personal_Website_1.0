@@ -243,9 +243,9 @@ hr{
 }
 
 /*---------Laptop size responsive Design -------------*/
-@media all and (min-width: 768px) and (max-width: 1024px){
+/*@media all and (min-width: 768px) and (max-width: 1024px){*/
 
-}
+/*}*/
 
 /*---------Tablet size responsive Desing -------------*/
 @media all and (min-width: 425px) and (max-width: 768px){

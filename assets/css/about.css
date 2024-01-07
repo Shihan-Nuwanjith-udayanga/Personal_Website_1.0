@@ -251,6 +251,27 @@
     #skills > div:nth-child(1) > div > p {
         text-align: center;
     }
+
+    #grid {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        width: 85%;
+        height: fit-content;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #grid > div {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #grid > div > img {
+        width: 75%;
+    }
 }
 
 
