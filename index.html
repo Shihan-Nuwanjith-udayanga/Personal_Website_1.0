@@ -54,24 +54,6 @@
             background: url("assets/gif/loading.gif");
             background-size: cover;
         }
-
-        .swiper {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-
-        .swiper-slide {
-            background-position: center;
-            background-size: cover;
-            width: 400px;
-            height: 300px;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
@@ -306,7 +288,7 @@
                             complete manner in understandable Sinhala. Individual or small group classes are available.
                             Text or call for details.</p>
                     </div>
-                    <a href="#service">
+                    <a href="assets/html/classes.html">
                         <button class="learnMore" type="button">Learn More</button>
                     </a>
                 </div>
@@ -326,7 +308,7 @@
                             high quality and reliability at a very reasonable price. We will make your idea a
                             reality.</p>
                     </div>
-                    <a href="#service">
+                    <a href="assets/html/webDesign.html">
                         <button class="learnMore" type="button">Learn More</button>
                     </a>
                 </div>
@@ -341,7 +323,7 @@
                         <p>we are create a creative and beautiful social media post, flayer design, poster design,
                             visiting cards, logo design, brochures ...etc</p>
                     </div>
-                    <a href="#service">
+                    <a href="assets/html/graphicDesign.html">
                         <button class="learnMore" type="button">Learn More</button>
                     </a>
                 </div>
@@ -359,7 +341,7 @@
                         <p>You can contact me for web design, mobile application front-end development. HTML, CSS, JS,
                             React-Native and Flutter technologies are used.</p>
                     </div>
-                    <a href="#service">
+                    <a href="assets/html/frontEnd.html">
                         <button class="learnMore" type="button">Learn More</button>
                     </a>
                 </div>
@@ -375,7 +357,7 @@
                             accounts but can't manage them properly? If so, talk to us. We will responsibly develop all
                             social media accounts of your business.</p>
                     </div>
-                    <a href="#service">
+                    <a href="assets/html/socialMedia.html">
                         <button id="learnMore" class="learnMore" type="button">Learn More</button>
                     </a>
                 </div>
@@ -394,32 +376,50 @@
             </section>
             <section id="slideSection">
                 <div id="projectsGrid">
-                    <a href="">
-                        <img src="assets/images/portfolio_mockup.jpg" alt="portfolio">
+                    <a href="https://shihannuwanjith.me/">
+                        <div>
+                            <img src="assets/images/portfolio_mockup.jpg" alt="portfolio">
+                        </div>
+                    </a>
+                    <a href="https://www.somersetprimelanka.com/" target="_blank">
+                        <div>
+                            <img src="assets/images/somerset_Mockup.jpg" alt="somerset_Mockup">
+                        </div>
                     </a>
                     <a href="">
-                        <img src="assets/images/somerset_Mockup.jpg" alt="somerset_Mockup">
+                        <div>
+                            <img src="assets/images/pharmacy_mockup.jpg" alt="pharmacy_mockup">
+                        </div>
                     </a>
                     <a href="">
-                        <img src="assets/images/pharmacy_mockup.jpg" alt="pharmacy_mockup">
+                        <div>
+                            <img src="assets/images/food_mockup.jpg" alt="food_mockup">
+                        </div>
                     </a>
                     <a href="">
-                        <img src="assets/images/food_mockup.jpg" alt="food_mockup">
+                        <div>
+                            <img src="assets/images/licda_mockup.jpg" alt="licda_mockup">
+                        </div>
                     </a>
                     <a href="">
-                        <img src="assets/images/licda_mockup.jpg" alt="licda_mockup">
+                        <div>
+                            <img src="assets/images/bitcoin_mockup.jpg" alt="bitcoin_mockup">
+                        </div>
                     </a>
                     <a href="">
-                        <img src="assets/images/bitcoin_mockup.jpg" alt="bitcoin_mockup">
+                        <div>
+                            <img src="assets/images/bus_mockup.jpg" alt="bus_mockup">
+                        </div>
                     </a>
                     <a href="">
-                        <img src="assets/images/bus_mockup.jpg" alt="bus_mockup">
+                        <div>
+                            <img src="assets/images/university_mockup.jpg" alt="university_mockup">
+                        </div>
                     </a>
                     <a href="">
-                        <img src="assets/images/university_mockup.jpg" alt="university_mockup">
-                    </a>
-                    <a href="">
-                        <img src="assets/images/rent_mockup.jpg" alt="rent_mockup">
+                        <div>
+                            <img src="assets/images/rent_mockup.jpg" alt="rent_mockup">
+                        </div>
                     </a>
                 </div>
             </section>
@@ -680,29 +680,6 @@
 <script>
     AOS.init({
         duration: 2500
-    });
-</script>
-<!--slide show script | resent project area-->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
     });
 </script>
 <script>
