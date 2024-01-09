@@ -135,12 +135,14 @@
         margin: auto;
     }
 
-    #head{
+    #headDescribe {
         width: 100%;
+        margin: auto;
+        margin-top: 40px;
         text-align: center;
     }
 
-    #head > h4{
+    #headDescribe > h4{
         margin-top: 30px;
     }
 
