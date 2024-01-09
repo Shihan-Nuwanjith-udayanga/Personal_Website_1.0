@@ -2,9 +2,318 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shihan - Web Design</title>
+    <title>Web Design</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://kit.fontawesome.com/7a26c6c140.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        #heading {
+            text-align: center;
+            font-family: "Roboto", serif;
+            color: #191970;
+            position: relative;
+        }
+
+        #heading > h1 {
+            margin-top: 50px;
+        }
+
+        #heading > p {
+            width: 80%;
+            line-height: 1.5;
+            margin: auto;
+        }
+
+        #technology{
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #technology > h2{
+            text-align: center;
+            font-family: "Roboto", serif;
+            color: #2D8A9A;
+            margin-bottom: 50px;
+        }
+
+        #technology > div{
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: repeat(9, 1fr);
+            width: 60%;
+            margin: auto;
+        }
+
+        #technology > div > img{
+            width: 60%;
+        }
+
+        #gridDiv {
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            width: 85%;
+            margin: auto;
+        }
+
+        #gridDiv > h1 {
+            text-align: center;
+            font-family: "Roboto", serif;
+            color: #2D8A9A;
+        }
+
+        #grid > a > div {
+            position: relative;
+            text-align: center;
+        }
+
+        #grid > a > div > img {
+            width: 90%;
+            margin: auto;
+            padding: 5px;
+        }
+
+        #grid > a > div::before {
+            content: "";
+            margin: auto;
+            /*background: antiquewhite;*/
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            position: absolute;
+        }
+
+        #grid > a > div:hover:before {
+            background-color: black;
+            opacity: 0.25;
+        }
+
+        /*----------- Mobile Responsive ------------*/
+        @media (max-width: 768px) {
+            #grid {
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: repeat(1, 1fr);
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
+<!--header area content start-->
+<header>
+    <aside>
+        <img src="../images/logo.png" alt="logo">
+    </aside>
+    <nav>
+        <ul>
+            <a href="../../index.html" class="active">
+                <li class="list">Home</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">About</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Service</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Portfolio</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Contact</li>
+            </a>
+        </ul>
+        <div class="toggle_button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
+    <div class="dropdown_menu">
+        <ul>
+            <a href="../../index.html" class="active">
+                <li class="list">Home</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">About</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Service</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Portfolio</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Contact</li>
+            </a>
+        </ul>
+    </div>
+</header>
+<!--header area content end-->
+<!--main area content start-->
+<main>
+    <div id="heading">
+        <h1>Web Design</h1>
+        <p>Get in touch with us today to create the web design you need for your organization with high quality and
+            reliability at a very reasonable price. We will make your idea a reality.</p>
+    </div>
+    <div id="technology">
+        <h2>The technologies and Tools we use for website design</h2>
+        <div>
+            <img src="../images/html.png" alt="html">
+            <img src="../images/css.png" alt="css">
+            <img src="../images/javascript.png" alt="javascript">
+            <img src="../images/laravel.png" alt="laravel">
+            <img src="../images/bootstrap.png" alt="bootstrap">
+            <img src="../images/figma.png" alt="figma">
+            <img src="../images/canva.png" alt="cava">
+            <img src="../images/vsCode.png" alt="vsCode">
+            <img src="../images/gitHub.png" alt="gitHub">
+        </div>
+    </div>
+    <div id="gridDiv">
+        <h1>Our Designs</h1>
+        <div id="grid">
+            <a href="https://www.somersetprimelanka.com/" target="_blank">
+                <div>
+                    <img src="../images/somerset_Mockup.jpg" alt="somerset_Mockup">
+                </div>
+            </a>
+            <a href="https://www.figma.com/proto/HWkhjeNwy3ZJ892SI5qQTN/NCA-Website?node-id=1-3&starting-point-node-id=1%3A3&mode=design&t=9RCRI12aMRQtW8yh-1"
+               target="_blank">
+                <div>
+                    <img src="../images/food_mockup.jpg" alt="food_mockup">
+                </div>
+            </a>
+            <a href="https://www.figma.com/proto/LPNMQ6m1aDWp7NtplVpOb5/www.licdaproducts.com?node-id=1-2&starting-point-node-id=1%3A2&mode=design&t=ECAyw17lMCe0zwl3-1"
+               target="_blank">
+                <div>
+                    <img src="../images/licda_mockup.jpg" alt="licda_mockup">
+                </div>
+            </a>
+            <a href="https://www.figma.com/proto/isJEg4ifPE7iR5KhjZGYRw/www.bitcoinlottry.com?node-id=1-2&starting-point-node-id=1%3A2&mode=design&t=5aNDfcr6ziwYQYZs-1"
+               target="_blank">
+                <div>
+                    <img src="../images/bitcoin_mockup.jpg" alt="bitcoin_mockup">
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+<!--main area content end-->
+<footer>
+    <section id="footer_section">
+        <!--        logo area content start-->
+        <div id="logo_area">
+            <img src="../images/logo.png" alt="logo">
+            <div>
+                <small>Enjoy working on projects, and exploring new technologies</small>
+            </div>
+        </div>
+        <!--        logo area content end-->
+        <!--        links area content starts-->
+        <div id="links_area">
+            <h2>Links</h2>
+            <ul>
+                <a href="../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../../index.html">
+                    <li>About</li>
+                </a>
+                <a href="../../index.html">
+                    <li>Service</li>
+                </a>
+                <a href="../../index.html">
+                    <li>Portfolio</li>
+                </a>
+                <a href="../../index.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <!--        links area content end-->
+        <!--        contact me area content start-->
+        <div id="contact_area">
+            <h2>Contact Me</h2>
+            <div>
+                <div>
+                    <img src="../images/phone.png" alt="phone image">
+                </div>
+                <h4>+94 77 3381841</h4>
+            </div>
+            <div>
+                <div>
+                    <img src="../images/email.png" alt="email image">
+                </div>
+                <h4>shihannuwanjith@gmail.com</h4>
+            </div>
+            <!--            social media icons content-->
+            <div id="socialMediaContent">
+                <a href="https://www.linkedin.com/in/shihan-nuwanjith-udayanga/" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/linkedin.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://github.com/Shihan-Nuwanjith-udayanga" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/icons8-github-128.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://stackoverflow.com/users/11324070/k-h-shihan-nuwanjith-udayanga" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/stackoverflow.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/shihan.nuwanjith?mibextid=ZbWKwL" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/facebook.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://instagram.com/shihan_nuwanjith_98?igshid=ZDdkNTZiNTM=" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/instagram.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://twitter.com/KNuwanjith?t=EdA4XxsRPyEeqKLZ1VFUgw&s=09" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/twitter.png" alt="PNG">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--        contact me area content end-->
+    </section>
+    <hr>
+    <!--    Copyright section content start-->
+    <section id="copyright">
+        <small>Copyright @2023 personal portfolio | Developed by Shihan Nuwanjith</small>
+    </section>
+    <!--    Copyright section content end-->
+</footer>
+<!--dropdown button-->
+<script>
+    const toggleBtn = document.querySelector('.toggle_button')
+    const toggleBnIcon = document.querySelector('.toggle_button i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBnIcon.classList = isOpen ? 'fas fa-times' : 'fas fa-bars'
+    }
+</script>
 </body>
 </html>
