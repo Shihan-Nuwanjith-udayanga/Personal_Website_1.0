@@ -28,11 +28,11 @@
     margin: 10px 0px 15px 0px;
 }
 
-#description{
+#headDescribe{
     width: 80%;
 }
 
-#description > h4{
+#headDescribe > h4{
     color: #5e5e5e;
     font-family: "Roboto",serif;
     font-weight: 500;
@@ -135,12 +135,12 @@
         margin: auto;
     }
 
-    #description{
+    #head{
         width: 100%;
         text-align: center;
     }
 
-    #description > h4{
+    #head > h4{
         margin-top: 30px;
     }
 
