@@ -47,12 +47,33 @@
     margin-top: 30px;
     margin-bottom: 50px;
     text-align: center;
+    position: relative;
 }
 
-#projectsGrid > a > img{
+#projectsGrid > a > div{
+    position: relative;
+}
+
+#projectsGrid > a > div > img{
     width: 90%;
     padding: 10px;
     margin: auto;
+}
+
+#projectsGrid > a > div::before {
+    content: "";
+    margin: auto;
+    /*background: antiquewhite;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+}
+
+#projectsGrid > a > div:hover:before{
+    background-color: black;
+    opacity: 0.25;
 }
 
 /*--------------------- testimonial area styles -------------------*/
