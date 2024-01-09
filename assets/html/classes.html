@@ -2,9 +2,295 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shihan - Classes</title>
+    <title>Classes</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://kit.fontawesome.com/7a26c6c140.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        #heading {
+            text-align: center;
+            font-family: "Roboto", serif;
+            color: #191970;
+            position: relative;
+        }
+
+        #heading > h1 {
+            margin-top: 50px;
+        }
+
+        #heading > p {
+            width: 80%;
+            line-height: 1.5;
+            margin: auto;
+        }
+
+        #gridDiv {
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            width: 85%;
+            margin: auto;
+        }
+
+        #grid > div{
+            box-shadow: 0 0 5px 1px #d9d9d9;
+            border-radius: 10px;
+            padding: 25px 70px 25px 70px;
+            margin: auto;
+            position: relative;
+            font-family: "Roboto", serif;
+        }
+
+        /*----------- Mobile Responsive ------------*/
+        @media (max-width: 768px) {
+            #grid{
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
+<!--header area content start-->
+<header>
+    <aside>
+        <img src="../images/logo.png" alt="logo">
+    </aside>
+    <nav>
+        <ul>
+            <a href="../../index.html" class="active">
+                <li class="list">Home</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">About</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Service</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Portfolio</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Contact</li>
+            </a>
+        </ul>
+        <div class="toggle_button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
+    <div class="dropdown_menu">
+        <ul>
+            <a href="../../index.html" class="active">
+                <li class="list">Home</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">About</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Service</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Portfolio</li>
+            </a>
+            <a href="../../index.html">
+                <li class="list">Contact</li>
+            </a>
+        </ul>
+    </div>
+</header>
+<!--header area content end-->
+<!--main area content start-->
+<main>
+    <div id="heading">
+        <h1>Class Details</h1>
+        <img src="../images/classes.png" alt="classesImage" width="20%">
+        <p>Even after taking the course and watching YouTube, you still can't learn java and webdesign properly, right?
+            Contact us to learn java, webdesign from the beginning in a very simple and complete manner in
+            understandable Sinhala. Individual or small group classes are available. Text or call for details.</p>
+    </div>
+    <div id="gridDiv">
+        <div id="grid">
+            <div>
+                <img src="../images/javaClass.png" alt="JavaLogo" width="90%">
+                <h1>Java Classes</h1>
+                <p>
+                    <b>Programming Fundamentals</b>
+                <ul>
+                    <li>Java Basics</li>
+                    <li>Computer Variables</li>
+                    <li>Data Types</li>
+                    <li>Flow Controls</li>
+                    <li>Operators</li>
+                    <li>Methods (Functions)</li>
+                    <li>Arrays</li>
+                    <li>Multi-dimensional Arrays</li>
+                </ul>
+                <b>Duration : </b>03 Months <br>
+                <b>Individual / Group Classes</b> <br>
+                <b>Medium : </b> Sinhala <br>
+                </p>
+            </div>
+            <div>
+                <img src="../images/practicalClass.png" alt="practicalLogo" width="90%">
+                <h1>Practical Class</h1>
+                <p>
+                    <b>Web Design Practical Class</b>
+                <ul>
+                    <li>03 websites design using HTML, CSS</li>
+                    <li>Figma Introduction</li>
+                    <li>01 Figma Design with Prototypes</li>
+                    <li>Free WebHosting</li>
+                </ul>
+                <b>Duration : </b>03 Months <br>
+                <b>Individual / Group Classes</b> <br>
+                <b>Medium : </b> Sinhala
+                </p>
+            </div>
+            <div>
+                <img src="../images/webClass.png" alt="webDesignLogo" width="90%">
+                <h1>Web Design Class</h1>
+                <p>
+                    <b>Web Design</b>
+                <ul>
+                    <li>HTML Basic</li>
+                    <li>CSS Basic</li>
+                    <li>CSS Positions</li>
+                    <li>Transitions</li>
+                    <li>Animations</li>
+                    <li>Responsive Designs</li>
+                    <li>CSS Framework (Bootstrap)</li>
+                    <li>Complete Portfolio Design</li>
+                    <li>Free Hosting</li>
+                </ul>
+                <b>Duration : </b>03 Months <br>
+                <b>Individual / Group Classes</b> <br>
+                <b>Medium : </b> Sinhala
+                </p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+            <br>
+            <h2>Contact More Details</h2>
+            <h4>Whatsapp Number:- 070 254 4110</h4>
+            <h4>Contact Number : - 077 338 1841</h4>
+        </div>
+    </div>
+</main>
+<!--main area content end-->
+<footer>
+    <section id="footer_section">
+        <!--        logo area content start-->
+        <div id="logo_area">
+            <img src="../images/logo.png" alt="logo">
+            <div>
+                <small>Enjoy working on projects, and exploring new technologies</small>
+            </div>
+        </div>
+        <!--        logo area content end-->
+        <!--        links area content starts-->
+        <div id="links_area">
+            <h2>Links</h2>
+            <ul>
+                <a href="../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../../index.html">
+                    <li>About</li>
+                </a>
+                <a href="../../index.html">
+                    <li>Service</li>
+                </a>
+                <a href="../../index.html">
+                    <li>Portfolio</li>
+                </a>
+                <a href="../../index.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <!--        links area content end-->
+        <!--        contact me area content start-->
+        <div id="contact_area">
+            <h2>Contact Me</h2>
+            <div>
+                <div>
+                    <img src="../images/phone.png" alt="phone image">
+                </div>
+                <h4>+94 77 3381841</h4>
+            </div>
+            <div>
+                <div>
+                    <img src="../images/email.png" alt="email image">
+                </div>
+                <h4>shihannuwanjith@gmail.com</h4>
+            </div>
+            <!--            social media icons content-->
+            <div id="socialMediaContent">
+                <a href="https://www.linkedin.com/in/shihan-nuwanjith-udayanga/" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/linkedin.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://github.com/Shihan-Nuwanjith-udayanga" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/icons8-github-128.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://stackoverflow.com/users/11324070/k-h-shihan-nuwanjith-udayanga" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/stackoverflow.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/shihan.nuwanjith?mibextid=ZbWKwL" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/facebook.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://instagram.com/shihan_nuwanjith_98?igshid=ZDdkNTZiNTM=" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/instagram.png" alt="PNG">
+                    </div>
+                </a>
+                <a href="https://twitter.com/KNuwanjith?t=EdA4XxsRPyEeqKLZ1VFUgw&s=09" target="_blank">
+                    <div class="socialMediaIcon">
+                        <img src="../images/twitter.png" alt="PNG">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--        contact me area content end-->
+    </section>
+    <hr>
+    <!--    Copyright section content start-->
+    <section id="copyright">
+        <small>Copyright @2023 personal portfolio | Developed by Shihan Nuwanjith</small>
+    </section>
+    <!--    Copyright section content end-->
+</footer>
+<!--dropdown button-->
+<script>
+    const toggleBtn = document.querySelector('.toggle_button')
+    const toggleBnIcon = document.querySelector('.toggle_button i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBnIcon.classList = isOpen ? 'fas fa-times' : 'fas fa-bars'
+    }
+</script>
 </body>
 </html>
