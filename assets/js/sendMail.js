@@ -31,7 +31,7 @@ function sendEmail() {
     Email.send({
         SecureToken: "b58b2017-e532-419e-81ca-5566e148db33",
         To: "s92067840@ousl.lk",
-        From: "shihannuwanjith@gmail.com",
+        From: "s92067840@ousl.lk",
         Subject: "Contact Form Enquiry",
         Body: bodyMessage,
     }).then((message) => {
