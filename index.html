@@ -13,7 +13,7 @@
           content="Shihan Nuwanjith Udayanga, software engineer, self-motivated, projects, technologies, insights,
           expertise, advancements, innovation, excellence, classes, web design, java, shihan, nuwanjith, linkeding,
           html, css, social media handeling, perosnal website, website, portfolio, design">
-<!--    <base href="https://shihannuwanjith.me/">-->
+    <base href="https://shihannuwanjith.me/">
     <script src="https://kit.fontawesome.com/7a26c6c140.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="icon" href="assets/images/favicon.png">
@@ -53,6 +53,19 @@
             position: fixed;
             background: url("assets/gif/loading.gif");
             background-size: cover;
+        }
+
+        .form-text {
+            color: #d93025;
+            display: none;
+        }
+
+        .error.form-control {
+            border-color: #d93025 !important;
+        }
+
+        .error .form-text {
+            display: block;
         }
     </style>
 </head>
@@ -508,22 +521,26 @@
             <!--            send message form area-->
             <div id="form_area">
                 <h4>Send Message</h4>
-                <form onsubmit="sendEmail(); reset(); return false" action="">
+                <form action="#">
                     <div>
                         <label for="name"></label>
-                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                        <div id="nameHelp" class="form-text">Name can't be blank</div>
                     </div>
                     <div>
-                        <label for="mail"></label>
-                        <input type="email" name="email" id="mail" placeholder="Email" required>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                        <div id="emailHelp" class="form-text email">Email Address can't be blank</div>
                     </div>
                     <div>
-                        <label for="tel"></label>
-                        <input type="tel" name="phone" id="tel" placeholder="Phone" required>
+                        <label for="mobile"></label>
+                        <input type="number" name="mobile" id="mobile" placeholder="Mobile Number" class="form-control">
+                        <div id="phoneNumberHelp" class="form-text">Mobile Number can't be blank</div>
                     </div>
                     <div>
                         <label for="message"></label>
-                        <textarea id="message" name="message" rows="8" placeholder="Message"></textarea>
+                        <textarea id="message" name="message" rows="8" placeholder="Message" class="form-control"></textarea>
+                        <div id="messageHelp" class="form-text">Message can't be blank</div>
                     </div>
                     <button type="submit">Submit</button>
                 </form>
@@ -648,10 +665,9 @@
         toggleBnIcon.classList = isOpen ? 'fas fa-times' : 'fas fa-bars'
     }
 </script>
-<script src="assets/js/index.js"></script>
+<!--<script src="assets/js/index.js"></script>-->
 <script src="assets/js/scroll.js"></script>
 <script src="assets/js/jquery.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="assets/js/sendMail.js"></script>
 <!--below script using the animate home section heading element (typed animation)-->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -659,6 +675,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <!--swiper library script-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- smptjs.com mail send script  -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- alert script cdn  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     var typingEffect = new Typed(".multiText", {
         strings: ["Shihan Nuwanjith", "Undergraduate Student", "Software Engineer", "Developer", "Teacher"],
