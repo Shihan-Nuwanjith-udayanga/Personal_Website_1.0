@@ -29,7 +29,7 @@ function sendEmail() {
         <b>Message :</b> ${message.value}<br>`;
 
     Email.send({
-        SecureToken: "70fa1ba8-f5bd-4b57-854f-b30ffe361605",
+        SecureToken: "b58b2017-e532-419e-81ca-5566e148db33",
         To: "s92067840@ousl.lk",
         From: "shihannuwanjith@gmail.com",
         Subject: "Contact Form Enquiry",
@@ -42,8 +42,9 @@ function sendEmail() {
                 icon: "success",
             });
         }
-    });CF110FFAA06169F93957BC1CCBF6429F4139
+    });
 }
+
 
 function checkInputs() {
     const items = document.querySelectorAll(".form-control");
