@@ -29,10 +29,10 @@ function sendEmail() {
         <b>Message :</b> ${message.value}<br>`;
 
     Email.send({
-        SecureToken: "611a6175-9d9c-46e8-b5b7-1b9bba5e4d19",
+        SecureToken: "70fa1ba8-f5bd-4b57-854f-b30ffe361605",
         To: "shihannuwanjith@gmail.com",
         From: "shihannuwanjith@gmail.com",
-        Subject: name.value,
+        Subject: "Contact Form Enquiry",
         Body: bodyMessage,
     }).then((message) => {
         if (message == "OK") {
@@ -42,7 +42,7 @@ function sendEmail() {
                 icon: "success",
             });
         }
-    });
+    });CF110FFAA06169F93957BC1CCBF6429F4139
 }
 
 function checkInputs() {
