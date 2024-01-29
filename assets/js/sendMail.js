@@ -29,8 +29,8 @@ function sendEmail() {
         <b>Message :</b> ${message.value}<br>`;
 
     Email.send({
-        SecureToken: "b58b2017-e532-419e-81ca-5566e148db33",
-        To: "s92067840@ousl.lk",
+        SecureToken: "89a62761-1567-42aa-895d-1b0e39ce967b",
+        To: "shihannuwanjith@gmail.com",
         From: "s92067840@ousl.lk",
         Subject: "Contact Form Enquiry",
         Body: bodyMessage,
